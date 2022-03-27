@@ -1,0 +1,344 @@
+/* * selektor gwiazdku- najsłabszy selektor ale o bardzo duzym zasiegu, czesto resetujemy w nim paddingin, marginesy i boz sizing*{ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Barlow;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button {
+  font-family: Fraunces;
+  color: hsl(212, 27%, 19%);
+}
+p {
+  color: hsl(212, 27%, 19%);
+}
+
+.btn {
+  color: hsl(212, 27%, 19%);
+  text-decoration: none;
+  font-family: Fraunces;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+/* MENU ----------------------------------------------------- */
+
+.pageHeader {
+  background-color: transparent;
+  position: absolute;
+  width: 100%;
+  padding-top: 30px;
+}
+.pageNav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0px auto;
+}
+.navContainer {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  list-style: none;
+}
+.navContainer a {
+  color: white;
+  text-decoration: none;
+}
+.navContainer li:nth-child(4) a {
+  background-color: white;
+  color: hsl(212, 27%, 19%);
+  text-transform: uppercase;
+  padding: 12px 20px;
+  border-radius: 40%;
+  font-family: Fraunces;
+  font-size: 14px;
+  letter-spacing: 1px;
+  transition: 0.4s;
+}
+.navContainer li:nth-child(4) a:hover {
+  background-color: #6fcfff;
+  color: white;
+}
+
+/* BANNER ---------------------------------------------------- */
+.pageBanner {
+  background-image: url(./images/desktop/image-header.jpg);
+  height: 800px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 150px;
+}
+.bannerTitle {
+  margin-top: 150px;
+  font-size: 54px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+
+  color: white;
+}
+/* ABOUT ------------------------------------------ */
+.pageAbout,
+.pageAudience {
+  display: flex;
+  min-height: 750px;
+}
+.aboutLeft {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.aboutRight {
+  background-image: url(./images/desktop/image-transform.jpg);
+  background-size: cover;
+  background-position: center;
+  flex: 1;
+}
+.aboutLeft .leftInfo {
+  width: 55%;
+}
+.leftInfo h3 {
+  font-size: 34px;
+}
+.leftInfo p {
+  margin: 35px 0px;
+  text-align: justify;
+}
+.photoLeft {
+  background-image: url(./images/desktop/image-stand-out.jpg);
+  background-size: cover;
+  background-position: center;
+  flex: 1;
+}
+.textRight {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.textRight .leftInfo {
+  width: 55%;
+}
+
+/* PRODUCTS ---------------------- */
+
+.pageProducts {
+  display: flex;
+  min-height: 750px;
+}
+
+.pageProducts .box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  background-position: top;
+  background-size: cover;
+  flex: 1;
+  padding: 30px 50px;
+  text-align: center;
+}
+.pageProducts .box h4 {
+  font-size: 24px;
+  margin-bottom: 18px;
+}
+.pageProducts .textBox {
+  min-height: 120px;
+}
+
+.productLeft {
+  background-image: url(./images/desktop/image-graphic-design.jpg);
+}
+
+.productRight {
+  background-image: url(./images/desktop/image-photography.jpg);
+}
+
+/* TESTIMONIAL ------------------------------------- */
+
+.pageTestimonials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 120px 0px;
+}
+
+.pageTestimonials > h2 {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 20px;
+  font-weight: 900;
+  color: hsl(210, 4%, 67%);
+  margin-bottom: 80px;
+}
+
+.testimonialsWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.testimonial {
+  text-align: center;
+  width: 320px;
+  margin: 0px 20px;
+}
+
+.testimonial > img {
+  width: 80px;
+  border-radius: 50%;
+  margin-bottom: 50px;
+}
+.testimonial > p {
+  margin-bottom: 60px;
+}
+
+/* GALLERY -------------------------- */
+.pageGallery {
+  display: flex;
+}
+
+.pageGallery > img {
+  width: 25%;
+}
+/* FOOTER ---------------------------------- */
+.pageFooter {
+  background-color: hsl(167, 30%, 66%);
+  padding-top: 70px;
+  text-align: center;
+}
+.pageFooter nav {
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+.pageFooter nav > a {
+  margin-right: 25px;
+  text-decoration: none;
+  color: hsl(168, 34%, 41%);
+  transition: color 0.4s;
+}
+.pageFooter nav > a:hover {
+  color: white;
+}
+.pageFooter .iconsBox {
+  padding-bottom: 40px;
+}
+.iconsBox img {
+  margin-right: 15px;
+}
+.leftInfo .btn {
+  position: relative;
+  text-align: center;
+  z-index: 15;
+}
+
+.leftInfo .btnYellow::before {
+  content: "";
+  position: absolute;
+  background-color: rgb(224, 241, 70);
+  height: 6px;
+  width: 100%;
+  border-radius: 50px;
+  bottom: -4px;
+  z-index: -1;
+  opacity: 0;
+}
+.leftInfo .btnRed::before {
+  content: "";
+  position: absolute;
+  background-color: rgb(211, 42, 0);
+  height: 6px;
+  width: 100%;
+  border-radius: 50px;
+  bottom: -4px;
+  z-index: -1;
+  opacity: 0;
+}
+
+.leftInfo .btn:hover::before {
+  opacity: 1;
+}
+
+.hamburgerBTN {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .navContainer {
+    display: none;
+  }
+  .hamburgerBTN {
+    display: block;
+  }
+  .pageBanner {
+    background-image: url("./images/mobile/image-header.jpg");
+    height: 550px;
+  }
+  .bannerTitle {
+    text-align: center;
+    font-size: 32px;
+    padding-left: 20px;
+    margin-top: 200px;
+  }
+  .testimonialsWrapper {
+    gap: 70px;
+  }
+  .pageProducts {
+    flex-direction: column;
+    min-height: 900px;
+  }
+  .pageAbout {
+    flex-direction: column-reverse;
+  }
+  .pageAudience {
+    flex-direction: column;
+  }
+  .aboutRight, .photoLeft {
+    flex: initial;
+    height: 350px;
+  }
+  .aboutLeft, .textRight  {
+    padding: 30px 0px;
+  }
+  .aboutLeft .leftInfo, .textRight .leftInfo{
+    width: 80%;
+  }
+  .pageGallery {
+    flex-wrap: wrap;
+  }
+  .pageGallery img {
+    width: 50%;
+  }
+  .leftInfo p {
+    text-align: center;
+  }
+  .leftInfo h3 {
+    text-align: center;
+  }
+  .btn .btnYellow {
+  text-align: center;
+  }
+}
+
+@media (max-width: 1200px) {
+  .pageNav {
+    width: 90%;
+  }
+}
